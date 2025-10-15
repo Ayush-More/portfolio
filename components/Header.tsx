@@ -19,7 +19,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <div className="bg-primary-500 text-white px-5 py-3 rounded-lg font-bold text-lg">
-              UPGRACE.IN
+              DEVBUDDY.TECH
             </div>
           </div>
 

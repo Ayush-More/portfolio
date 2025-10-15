@@ -241,13 +241,13 @@ const Contact = () => {
               </div>
               <h4 className="text-lg font-semibold text-gray-900 mb-2">Primary Email</h4>
               <a
-                href="mailto:upgrace.in@gmail.com"
+                href="mailto:ayushmore8652@gmail.com"
                 className="inline-flex items-center bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:scale-105 mb-2"
               >
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                upgrace.in@gmail.com
+                ayushmore8652@gmail.com
               </a>
               <p className="text-sm text-gray-600">
                 We typically respond within 2-4 hours during business hours
@@ -260,7 +260,7 @@ const Contact = () => {
               <p className="text-gray-600 mb-4">Get instant responses on your preferred platform</p>
               <div className="flex space-x-4">
                 <a
-                  href="https://wa.me/yourwhatsappnumber"
+                  href="https://wa.me/9321401312"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:scale-105"
@@ -271,7 +271,7 @@ const Contact = () => {
                   WhatsApp
                 </a>
                 <a
-                  href="https://t.me/upgrace"
+                  href="https://t.me/devsbuddy"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:scale-105"

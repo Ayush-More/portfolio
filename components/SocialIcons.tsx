@@ -19,7 +19,7 @@ const SocialIcons = () => {
 
         {/* Telegram */}
         <a
-          href="https://t.me/upgrace"
+          href="https://t.me/devsbuddy"
           target="_blank"
           rel="noopener noreferrer"
           className="w-14 h-14 bg-blue-500 hover:bg-blue-600 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110 group"
@@ -32,7 +32,7 @@ const SocialIcons = () => {
 
         {/* Email */}
         <a
-          href="mailto:upgrace.in@gmail.com"
+          href="mailto:ayushmore8652@gmail.com"
           className="w-14 h-14 bg-primary-500 hover:bg-primary-600 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110 group"
           title="Email"
         >
@@ -46,3 +46,4 @@ const SocialIcons = () => {
 };
 
 export default SocialIcons;
+

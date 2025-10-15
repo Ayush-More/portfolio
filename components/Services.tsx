@@ -67,7 +67,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="services" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -83,17 +83,17 @@ const Services = () => {
               </svg>
               Services
             </div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               What We Do
             </h2>
-            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               End-to-end engineering solutions to launch and scale your digital products
             </p>
           </motion.div>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={service.id}
@@ -101,7 +101,7 @@ const Services = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="relative bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 hover:scale-105 cursor-pointer group"
+              className="relative bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
             >
               {/* Popular Badge */}
               {service.isPopular && (
@@ -114,7 +114,7 @@ const Services = () => {
               )}
 
               {/* Icon */}
-              <div className="bg-primary-500 text-white w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary-600 group-hover:scale-110 transition-all duration-300">
+              <div className="bg-primary-500 text-white w-16 h-16 rounded-xl flex items-center justify-center mb-6">
                 {service.icon}
               </div>
 
@@ -152,7 +152,7 @@ const Services = () => {
               {/* CTA Button */}
               <a
                 href="#contact"
-                className="w-full bg-primary-500 hover:bg-primary-600 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 flex items-center justify-center group-hover:shadow-lg group-hover:-translate-y-1"
+                className="w-full bg-primary-500 hover:bg-primary-600 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center group"
               >
                 Get Quote
                 <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
