@@ -133,15 +133,14 @@ const Work = () => {
   };
 
   return (
-    <section id="work" className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 relative overflow-hidden">
+    <section id="work" className="pt-24 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden">
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-20">
+      <div className="absolute inset-0 opacity-20 pointer-events-none">
         <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 25% 25%, #3b82f6 0%, transparent 50%),
-                           radial-gradient(circle at 75% 75%, #8b5cf6 0%, transparent 50%),
-                           radial-gradient(circle at 50% 50%, #06b6d4 0%, transparent 50%)`,
+          backgroundImage: `radial-gradient(circle at 25% 25%, #9333ea 0%, transparent 50%),
+                           radial-gradient(circle at 75% 75%, #10b981 0%, transparent 50%),
+                           radial-gradient(circle at 50% 50%, #f97316 0%, transparent 50%)`,
         }}></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
       </div>
       
       <div className="max-w-7xl mx-auto relative z-10">
@@ -149,14 +148,20 @@ const Work = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="section-header"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <span className="badge mb-6">
+            <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
+            </svg>
+            Our Portfolio
+          </span>
+          <h2 className="section-title">
             Selected Work
           </h2>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+          <p className="section-subtitle">
             A showcase of our recent projects and digital solutions
           </p>
         </motion.div>
@@ -165,9 +170,9 @@ const Work = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
           viewport={{ once: true }}
-          className="mb-8"
+          className="mb-12"
         >
           <div className="relative max-w-2xl mx-auto">
             <MagnifyingGlassIcon className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
@@ -176,7 +181,7 @@ const Work = () => {
               placeholder="Search projects by name, technology, or category"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white shadow-sm text-gray-900 placeholder-gray-500"
+              className="w-full pl-12 pr-4 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white shadow-soft text-gray-900 placeholder-gray-500 font-medium transition-all duration-300 hover:border-gray-300"
             />
           </div>
         </motion.div>
@@ -185,35 +190,39 @@ const Work = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="flex flex-wrap justify-center gap-3 mb-12"
+          className="flex flex-wrap justify-center gap-3 mb-16"
         >
-          {categories.map((category) => (
-            <button
+          {categories.map((category, index) => (
+            <motion.button
               key={category.id}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.4, delay: index * 0.05 }}
+              viewport={{ once: true }}
               onClick={() => setActiveFilter(category.id)}
-              className={`flex items-center px-4 py-2 rounded-xl font-medium transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:scale-105 ${
+              className={`flex items-center px-4 py-2 rounded-xl font-semibold transition-all duration-300 ${
                 activeFilter === category.id
-                  ? 'bg-primary-500 text-white shadow-lg'
-                  : 'bg-white text-gray-600 hover:bg-gray-50 border border-gray-200 shadow-sm'
+                  ? 'bg-gradient-to-r from-primary-500 to-secondary-500 text-white shadow-vibrant hover:shadow-glow-primary'
+                  : 'bg-white text-gray-700 hover:bg-gray-50 border-2 border-gray-200 shadow-soft hover:border-primary-300'
               }`}
             >
               {getCategoryIcon(category.icon)}
-              <span className="ml-2 hidden sm:inline">{category.name}</span>
-              <span className={`ml-2 px-2 py-1 rounded-full text-xs ${
+              <span className="ml-2 hidden sm:inline text-sm">{category.name}</span>
+              <span className={`ml-2 px-2 py-1 rounded-full text-xs font-bold ${
                 activeFilter === category.id
-                  ? 'bg-white/20 text-white'
-                  : 'bg-gray-100 text-gray-600'
+                  ? 'bg-white/30 text-white'
+                  : 'bg-gray-200 text-gray-700'
               }`}>
                 {category.count}
               </span>
-            </button>
+            </motion.button>
           ))}
         </motion.div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project, index) => (
             <motion.div
               key={project.id}
@@ -221,27 +230,33 @@ const Work = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 border border-gray-200"
+              className="group card-elevated hover:shadow-glow-primary overflow-hidden"
             >
               {/* Project Image */}
-              <div className="relative h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+              <div className="relative h-48 bg-gradient-to-br from-primary-100 to-secondary-100 flex items-center justify-center overflow-hidden">
                 {project.isLive && (
-                  <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                  <motion.div
+                    initial={{ scale: 0 }}
+                    whileInView={{ scale: 1 }}
+                    transition={{ type: 'spring', stiffness: 200 }}
+                    className="absolute top-4 right-4 bg-gradient-to-r from-secondary-500 to-secondary-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-vibrant flex items-center"
+                  >
+                    <span className="w-2 h-2 bg-white rounded-full mr-2 animate-pulse"></span>
                     Live
-                  </div>
+                  </motion.div>
                 )}
-                <div className="text-gray-400 text-6xl font-bold">
+                <div className="text-gray-300 text-6xl font-bold group-hover:scale-110 transition-transform duration-300">
                   {project.title.charAt(0)}
                 </div>
               </div>
 
               {/* Project Content */}
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">
                   {project.title}
                 </h3>
                 <div className="mb-4">
-                  <span className="text-primary-500 font-semibold text-sm uppercase tracking-wide">
+                  <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent font-bold text-sm uppercase tracking-wide">
                     {project.category.replace('fullstack', 'FULL STACK').replace('webapp', 'WEB APP')}
                   </span>
                 </div>
@@ -252,13 +267,13 @@ const Work = () => {
                   {project.technologies.slice(0, 3).map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-medium"
+                      className="bg-primary-50 text-primary-700 px-3 py-1 rounded-full text-xs font-semibold border border-primary-200"
                     >
                       {tech}
                     </span>
                   ))}
                   {project.technologies.length > 3 && (
-                    <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">
+                    <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-semibold border border-gray-200">
                       +{project.technologies.length - 3}
                     </span>
                   )}
@@ -272,9 +287,9 @@ const Work = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="text-center py-12"
+            className="text-center py-16"
           >
-            <p className="text-gray-500 text-lg">No projects found matching your criteria.</p>
+            <p className="text-gray-500 text-lg font-semibold">No projects found matching your criteria.</p>
           </motion.div>
         )}
       </div>
