@@ -95,9 +95,9 @@ const TransformSection = () => {
           className="text-center mb-20"
         >
           <span className="badge-secondary inline-block mb-6">
-            <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+            {/* <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
-            </svg>
+            </svg> */}
             Why Work With Me
           </span>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">

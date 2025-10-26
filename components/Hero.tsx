@@ -134,7 +134,12 @@ const Hero = () => {
                 
                 {/* Profile Image */}
                 <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white shadow-2xl bg-gray-200 flex items-center justify-center">
-                  <div className="text-6xl text-gray-400">👨‍💻</div>
+                  {/* <div className="text-6xl text-gray-400">👨‍💻</div> */}
+                  <img 
+                    src="/assets/profile_pic.png" 
+                    alt="Ayush More - Full-Stack Developer" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 
                 {/* Floating Elements */}
