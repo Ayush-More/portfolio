@@ -78,7 +78,7 @@ const Contact = () => {
               Start Your Project
             </h3>
             <p className="text-gray-600 mb-8">
-              Tell us about your goals. We'll propose the best path forward.
+              Tell me about your goals. I'll propose the best path forward.
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -234,7 +234,7 @@ const Contact = () => {
               Prefer Direct Contact?
             </h3>
             <p className="text-gray-600 mb-10">
-              Reach out to us directly for immediate assistance.
+              Reach out to me directly for immediate assistance.
             </p>
 
             {/* Email Contact */}
@@ -255,7 +255,7 @@ const Contact = () => {
                 ayushmore8652@gmail.com
               </a>
               <p className="text-sm text-gray-600 font-medium">
-                We typically respond within 2-4 hours during business hours
+                I typically respond within 2-4 hours during business hours
               </p>
             </div>
 

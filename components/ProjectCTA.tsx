@@ -7,7 +7,7 @@ const ProjectCTA = () => {
     {
       id: 1,
       step: '01',
-      title: 'Tell Us Your Idea',
+      title: 'Share Your Idea',
       description: 'Share your vision, goals, and any specific requirements you have in mind',
       icon: (
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -19,7 +19,7 @@ const ProjectCTA = () => {
       id: 2,
       step: '02',
       title: 'Get Expert Consultation',
-      description: 'Our team reviews your project and provides strategic recommendations',
+      description: 'I review your project and provide strategic recommendations',
       icon: (
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
           <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
@@ -41,7 +41,7 @@ const ProjectCTA = () => {
       id: 4,
       step: '04',
       title: 'Start Building',
-      description: 'We kick off your project and keep you updated every step of the way',
+      description: 'I kick off your project and keep you updated every step of the way',
       icon: (
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
           <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
@@ -88,7 +88,7 @@ const ProjectCTA = () => {
             </span>
           </h2>
           <p className="section-subtitle">
-            Let's discuss how we can help bring your ideas to life. It's easier than you think to get started.
+            Let's discuss how I can help bring your ideas to life. It's easier than you think to get started.
           </p>
         </motion.div>
 

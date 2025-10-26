@@ -17,8 +17,8 @@ const TransformSection = () => {
     },
     {
       id: 2,
-      title: 'Expert Team',
-      description: 'Work with experienced developers and consultants who understand your vision',
+      title: 'Expert Skills',
+      description: 'Years of experience in modern web technologies and development best practices',
       icon: (
         <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
           <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
@@ -98,7 +98,7 @@ const TransformSection = () => {
             <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
             </svg>
-            Why Choose Us
+            Why Work With Me
           </span>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
             Transform Your Vision into
@@ -107,7 +107,7 @@ const TransformSection = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            We combine cutting-edge technology with creative solutions to turn your ideas into powerful digital products that make an impact.
+            I combine cutting-edge technology with creative solutions to turn your ideas into powerful digital products that make an impact.
           </p>
         </motion.div>
 
@@ -204,7 +204,7 @@ const TransformSection = () => {
               href="#work"
               className="btn-outline text-lg px-10 py-4 font-semibold group"
             >
-              View Our Work
+              View My Work
               <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
