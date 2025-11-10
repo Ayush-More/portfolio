@@ -1,6 +1,8 @@
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import Services from '@/components/Services'
+import Achievements from '@/components/Achievements'
+import Experience from '@/components/Experience'
 import TransformSection from '@/components/TransformSection'
 import Work from '@/components/Work'
 import ProjectCTA from '@/components/ProjectCTA'
@@ -13,7 +15,9 @@ export default function Home() {
       <Header />
       <Hero />
       <Services />
-      {/* <TransformSection /> */}
+      {/* <Achievements />
+      <Experience /> */}
+      <TransformSection />
       <Work />
       <ProjectCTA />
       <Contact />

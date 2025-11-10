@@ -128,7 +128,7 @@ const Hero = () => {
           <div className="flex justify-center lg:justify-center">
             <div className="relative">
               {/* Profile Image Container */}
-              <div className="relative mb-4 w-72 h-72 sm:w-80 sm:h-80">
+              <div className="relative mb-10 w-72 h-72 sm:w-80 sm:h-80">
                 {/* Background Circle */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary-400 to-secondary-400 rounded-full opacity-20 animate-pulse"></div>
                 
